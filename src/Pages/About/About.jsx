@@ -4,17 +4,16 @@ import CompanyStructure from "./CompanyStructure";
 import Mission from "./Mission";
 import StrategicGoals from "./StrategicGoals";
 
-
 function About() {
   return (
     <>
-    <div className="">
-    <Mission/>
-    <StrategicGoals/>
-    <BussinessModel/>
-    <CompanyStructure/>
-    <BOD/>
-    </div>
+      <div className="">
+        <Mission />
+        <StrategicGoals />
+        <BussinessModel />
+        <CompanyStructure />
+        <BOD />
+      </div>
     </>
   );
 }

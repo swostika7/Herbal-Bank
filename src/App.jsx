@@ -8,7 +8,6 @@ import FlagShip from "./Pages/Home/FlagShip";
 import Header from "./layouts/Header";
 import Promotion from "./Pages/Home/Promotion";
 import Footer from "./layouts/Footer";
-// import Accordian from "./Pages/Home/Accordian";
 import AccordianMain from "./Pages/Home/AccordianMain";
 
 function App() {

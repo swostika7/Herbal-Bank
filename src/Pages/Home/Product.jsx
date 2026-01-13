@@ -1,4 +1,4 @@
-// import { PiPlant } from "react-icons/pi";
+
 import PlantLogo from "../../components/PlantLogo";
 import ProductCard from "../../components/ProductCard";
 import Heading from "../../components/Heading";
@@ -8,28 +8,29 @@ import Buttons from "../../components/Buttons";
 function Product() {
   return (
     <div className=" bg-four p-5 ">
-      <div className="relative z-10 pt-50 space-y-3 max-w-6xl container mx-auto">
-        {/* logo  */}
-        <PlantLogo />
-
-        {/* Our New Products  */}
+      <div className="z-10 pt-62 pb-4 md:pt-72 space-y-10 lg:pt-40 md:overflow-hidden max-w-6xl container mx-auto ">
         <div>
-          <Heading
-            heading={"Our New Products"}
-            redesign={"flex justify-center items-center text-one "}
-          >
-            <p className=" text-center">
-              Welcome to the realm of nature's bounty at Muktinath Herbal Bank
-              Limited, where we pride ourselves on offering a diverse array of
-              premium herbal products crafted with care and expertise. We source
-              only the finest botanical ingredients, ensuring purity and potency
-              in every bottle.
-            </p>
-          </Heading>
-        </div>
+          {/* logo  */}
+          <PlantLogo />
 
+          {/* Our New Products  */}
+          <div>
+            <Heading
+              heading={"Our New Products"}
+              redesign={"flex justify-center items-center text-one "}
+            >
+              <p className=" text-center">
+                Welcome to the realm of nature's bounty at Muktinath Herbal Bank
+                Limited, where we pride ourselves on offering a diverse array of
+                premium herbal products crafted with care and expertise. We
+                source only the finest botanical ingredients, ensuring purity
+                and potency in every bottle.
+              </p>
+            </Heading>
+          </div>
+        </div>
         {/* List of products  */}
-        <div className="grid grid-cols-4 gap-4 p-4 container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-4 ">
           <ProductCard
             img={"/assets/dab.png"}
             title={"10 DAB-III"}
@@ -69,7 +70,10 @@ function Product() {
         {/* See more products  */}
         <div className="flex justify-center items-center">
           <Link to="/products">
-            <Buttons buttonText={"See More Products"} buttonStyles={"bg-one "} />
+            <Buttons
+              buttonText={"See More Products"}
+              buttonStyles={"bg-one "}
+            />
           </Link>
         </div>
       </div>

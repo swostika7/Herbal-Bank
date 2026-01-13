@@ -1,6 +1,10 @@
 import Card from "../../components/Card";
 import { LuLeaf } from "react-icons/lu";
 import { IoRibbonOutline } from "react-icons/io5";
+import { LiaRibbonSolid } from "react-icons/lia";
+import { RiGlobalLine } from "react-icons/ri";
+import { SiHyperskill } from "react-icons/si";
+
 
 
 function StrategicGoals() {
@@ -18,25 +22,25 @@ function StrategicGoals() {
         </div><br/>
 
         {/* Our Strategic Goals */}
-        <div className=" grid grid-cols-3 gap-4">
+        <div className=" grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             <Card icon={<LuLeaf size={30} className="text-green-700"/>} name={"Sustainable Cultivation"} par={"Advance organic farming and ethical wild harvesting practices while preserving biodiversity across Nepal's diverse ecological regions."} aboutcard={"border-t-4 border-green-500"}/>
-            <Card icon={<LuLeaf size={30} className="text-green-700"/>} name={"Card Assurance"} par={"Implement international certification standards (organic, fair trade, GMP) to ensure premium Card and safety for all herbal products."} aboutcard={"border-t-4 border-green-500"}/>
-            <Card icon={<LuLeaf size={30} className="text-green-700"/>} name={"Community Empowerment"} par={"Create fair-trade partnerships, develop skills, and increase market access for medicinal plant growers in rural communities."} aboutcard={"border-t-4 border-green-500"}/>
+            <Card icon={<LiaRibbonSolid size={30} className="text-green-700"/>} name={"Quality Assurance"} par={"Implement international certification standards (organic, fair trade, GMP) to ensure premium Card and safety for all herbal products."} aboutcard={"border-t-4 border-green-500"}/>
+            <Card icon={<SiHyperskill size={30} className="text-green-700"/>} name={"Community Empowerment"} par={"Create fair-trade partnerships, develop skills, and increase market access for medicinal plant growers in rural communities."} aboutcard={"border-t-4 border-green-500"} className={""}/>
         </div>
 
 
         {/* awareness  */}
-        <div className="grid grid-cols-2 gap-4">
-          <Card icon={<IoRibbonOutline size={30} className="text-green-700"/>} name={"Global Awareness"} par={"Raise international recognition of Nepal's medicinal herbs through research-backed wellness solutions and transparent sourcing practices."} aboutcard={"border-t-4 border-green-500"}/>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+          <Card icon={<RiGlobalLine size={30} className="text-green-700"/>} name={"Global Awareness"} par={"Raise international recognition of Nepal's medicinal herbs through research-backed wellness solutions and transparent sourcing practices."} aboutcard={"border-t-4 border-green-500"}/>
           <Card icon={<IoRibbonOutline size={30} className="text-green-700"/>} name={"Green Economy"} par={"Build a sustainable, climate-resilient herbal industry that contributes to Nepal's economy while aligning with global Sustainable Development Goals."} aboutcard={"border-t-4 border-green-500"}/>
 
         </div>
 
         {/* gmp sdg  */}
-        <div className="  text-sm container mx-auto bg-gray-100 w-4/6 p-3 rounded-full flex justify-center items-center space-x-8">
-          <span ><strong>GMP</strong> : Good Manufacturing practices</span>
-          <span className="text-blue-500">|</span>
-          <span><strong>SDGs</strong> : Sustainable Development Goals</span>
+        <div className="  text-xs lg:text-sm container mx-auto bg-gray-100 w-full lg:w-2/3 p-4 rounded-full flex justify-center space-x-2 text-center">
+          <span ><span className="font-semibold">GMP</span> : Good Manufacturing practices</span>
+          <span className="text-blue-500  ">|</span>
+          <span><span className="font-semibold text-center">SDGs</span> : Sustainable Development Goals</span>
         </div>
 
       </div>

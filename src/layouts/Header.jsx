@@ -1,71 +1,83 @@
-import React, { useState } from "react"; 
-import { RiMenu2Line, RiCloseLine } from "react-icons/ri"; 
-import {Link,NavLink} from "react-router-dom"
+import { Button } from "@/components/ui/button";
+import React, { useState } from "react";
+import { RiMenu2Line, RiCloseLine } from "react-icons/ri";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="p-4 bg-white shadow-md w-full relative">
-      <div className="container max-w-6xl mx-auto flex justify-between items-center">
-        {/* Logo section */}
-        <div className="pl-4">
-          <Link to="/">
-            <img
-              src="/assets/muktinath.png"
-              className="w-32 object-contain" 
-              alt="Logo"
-            />
-          </Link>
+    <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 border-b border-gray-200">
+      <div className="container max-w-6xl mx-auto px-4">
+        <div className="flex justify-between items-center h-16 lg:h-20">
+          {/* Logo Section */}
+          <div className="shrink-0">
+            <Link to="/" onClick={() => setIsOpen(false)}>
+              <img
+                src="/assets/muktinath.png"
+                className="h-10 lg:h-12 w-auto object-contain"
+                alt="Logo"
+              />
+            </Link>
+          </div>
+
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center space-x-10">
+            <NavLink to="/">Home</NavLink>
+
+            <NavLink to="/about">About</NavLink>
+
+            <NavLink to="/services">Services</NavLink>
+
+            <NavLink to="/products">Products</NavLink>
+          </div>
+
+          {/* Mobile Button */}
+          <div className="lg:hidden flex items-center">
+            <button
+              className="text-3xl text-gray-800 focus:outline-none"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label=" Menu"
+            >
+              {isOpen ? <RiCloseLine /> : <RiMenu2Line />}
+            </button>
+          </div>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="text-md hidden lg:flex items-center">
-          <ul className="flex space-x-10">
-            <li className="hover:text-one transition-colors cursor-pointer">
-              <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
-            </li>
-            <li className="hover:text-one transition-colors cursor-pointer">
-              <NavLink to="/about" onClick={() => setIsOpen(false)}>About</NavLink>
-            </li>
-            <li className="hover:text-one transition-colors cursor-pointer">
-              <NavLink to="/services" onClick={() => setIsOpen(false)}>Services</NavLink>
-            </li>
-            <li className="hover:text-one transition-colors cursor-pointer">
-              <NavLink to="/products" onClick={() => setIsOpen(false)}>Products</NavLink>
-            </li>
-          </ul>
-        </div>
-
-        {/* Mobile Button */}
-        <div className="flex items-center lg:hidden">
-          <button
-            className="text-3xl text-gray-800"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle Menu"
-          >
-            {isOpen ? <RiCloseLine /> : <RiMenu2Line />}
-          </button>
-        </div>
+        {/* Mobile  Dropdown */}
+        {isOpen && (
+          <div className="lg:hidden flex flex-col space-y-2 bg-two text-white">
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className="px-4 py-3 hover:text-one font-medium border-gray-50"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setIsOpen(false)}
+              className="px-4 py-3 hover:text-one font-medium border-gray-50"
+            >
+              About
+            </Link>
+            <Link
+              to="/services"
+              onClick={() => setIsOpen(false)}
+              className="px-4 py-3 hover:text-one font-medium border-gray-50"
+            >
+              Services
+            </Link>
+            <Link
+              to="/products"
+              onClick={() => setIsOpen(false)}
+              className="px-4 py-3 hover:text-one font-medium border-gray-50"
+            >
+              Products
+            </Link>
+          </div>
+        )}
       </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-two text-white p-6 flex flex-col space-y-4 z-50 shadow-lg">
-          <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-Five">
-            Home
-          </Link>
-          <Link to="/about" onClick={() => setIsOpen(false)} className="hover:text-Five">
-            About
-          </Link>
-          <Link to="/services" onClick={() => setIsOpen(false)} className="hover:text-Five">
-            Services
-          </Link>
-          <Link to="/products" onClick={() => setIsOpen(false)} className="hover:text-Five">
-            Products
-          </Link>
-        </div>
-      )}
     </nav>
   );
 }

@@ -7,11 +7,11 @@ import { BiBullseye } from "react-icons/bi";
 function Mission() {
   return (
     <>
-    <div className="bg-gray-200">
+    <div className="bg-gray-200 py-16 lg:p-0">
         <div className="">
           <AboutHome />
         </div>
-        <div className="grid grid-cols-2 gap-3 p-5 container mx-auto max-w-6xl ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-3 p-5 container mx-auto max-w-6xl ">
           <Card
             icon={<LuLeaf size={30} className="text-green-700" />}
             name={<p className="text-green-500">Our Mission</p>}

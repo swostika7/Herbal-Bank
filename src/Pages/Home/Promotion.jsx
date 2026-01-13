@@ -2,8 +2,6 @@ import { IoRibbonSharp } from "react-icons/io5";
 import { PiPlantFill } from "react-icons/pi";
 import { BsFillPeopleFill } from "react-icons/bs";
 
-
-
 const Reused = [
   {
     Icon: IoRibbonSharp,
@@ -24,46 +22,79 @@ const Reused = [
       "Your satisfaction is our top priority. Our dedicated customer support team is available to assist you with any inquiries, concerns, or feedback you may have.",
   },
 ];
+const Image = [
+  {
+    img: "/assets/foot1.png",
+    name: "foot1",
+  },
+  {
+    img: "/assets/foot2.png",
+    name: "foot2",
+  },
+  {
+    img: "/assets/foot3.png",
+    name: "foot3",
+  },
+  {
+    img: "/assets/foot4.png",
+    name: "foot4",
+  },
+  {
+    img: "/assets/foot5.png",
+    name: "foot5",
+  },
+  {
+    img: "/assets/foot6.png",
+    name: "foot6",
+  },
+  {
+    img: "/assets/foot7.png",
+    name: "foot7",
+  },
+];
 function Promotion() {
   return (
     <>
-    <div>
-      <div className="grid grid-cols-2 bg-one">
-        {/* yarsagumba  */}
-        <div>
-          <img src="/assets/yarsagumba.png" alt="" />
-        </div>
-        {/* promotion  */}
+      <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:items-center bg-one">
+          {/* yarsagumba  */}
+          <div>
+            <img
+              src="/assets/yarsagumba.png"
+              alt="yarsagumba"
+              className="md:w-full w-auto"
+            />
+          </div>
+          {/* promotion  */}
 
-        <div className="p-5 flex flex-col space-y-9 justify-center items-center">
-          {Reused.map((items, i) => (
-            <div className="flex space-x-6 ">
-              <div className="text-white">
-                <items.Icon size={70} />
+          <div className="p-5 flex flex-col space-y-9 justify-center items-center ">
+            {Reused.map((items, i) => (
+              <div className="flex space-x-6 ">
+                <div className="text-white text-5xl lg:text-6xl">
+                  <items.Icon />
+                </div>
+                <div className="flex flex-col space-y-2">
+                  <h1 className="font-semibold text-2xl">{items.title}</h1>
+                  <p className="text-sm">{items.description}</p>
+                </div>
               </div>
-              <div className="flex flex-col space-y-2">
-                <h1 className="font-semibold text-2xl">{items.title}</h1>
-                <p className="text-sm">{items.description}</p>
-              </div>
-            </div>
+            ))}
+            
+          </div>
+        </div>
+
+        {/* photo animation  */}
+        <div className="grid grid-cols-7  lg:h-50 w-full overflow-hidden scroll-smooth md:scroll-auto ">
+          {Image.map((items, i) => (
+            <img
+              key={i}
+              src={items.img}
+              alt={items.name}
+              className="object-cover h-full  w-full"
+            />
           ))}
-          ;
         </div>
       </div>
-      {/* photo animation  */}
-         <div className='grid grid-cols-7 h-50 w-full overflow-hidden '>
-            <img src="/assets/foot1.png" alt='' className="h-full object-cover"/>
-            <img src="/assets/foot2.png" alt='' className="h-full"/>
-            <img src="/assets/foot3.png" alt='' className="h-full"/>
-            <img src="/assets/foot4.png" alt='' className="h-full"/>
-            <img src="/assets/foot5.png" alt='' className="h-full"/>
-            <img src="/assets/foot6.png" alt='' className="h-full"/>
-            <img src="/assets/foot7.png" alt='' className="h-full"/>
-           
-
-        </div>
-        
-        </div>
     </>
   );
 }

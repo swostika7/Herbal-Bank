@@ -60,13 +60,13 @@ function BestService() {
       </Heading>
 
       {/* products details  */}
-      <div className="container mx-auto grid grid-cols-3 gap-5 max-w-6xl w-full p-5 ">
+      <div className="p-5 container mx-auto  lg:pl-20 lg:pr-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-4 ">
         {Services.map((items, i) => (
           <div className="shadow flex flex-col space-y-3 rounded-md hover:shadow-2xl h-full w-full">
             <img src={items.img} alt={items.name} className="max-h-64" />
             <div className="flex flex-col space-y-2 p-2">
-              <h1 className="text-xl font-semibold">{items.name}</h1>
-              <p className="text-sm">{items.description}</p>
+              <h1 className="text-xl lg:text-2xl font-semibold">{items.name}</h1>
+              <p className="text-sm lg:text-lg">{items.description}</p>
             </div>
           </div>
         ))}

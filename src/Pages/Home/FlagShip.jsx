@@ -12,7 +12,7 @@ import Heading from "../../components/Heading";
 function FlagShip() {
   return (
     <>
-      <div className="bg-[#f9f9f9] flex flex-col space-y-4">
+      <div className="bg-[#f9f9f9] flex flex-col space-y-4 p-3">
         <div className="container mx-auto max-w-6xl space-y-4">
         {/* logo  */}
         <PlantLogo />
@@ -24,7 +24,7 @@ function FlagShip() {
         </Heading>
 
         {/* lothsala  */}
-        <div className=" rounded-2xl bg-white shadow hover:shadow-2xl p-8 flex flex-col justify-center items-center space-y-4 ">
+        <div className=" rounded-2xl bg-white shadow hover:shadow-2xl p-8 flex flex-col justify-center items-center space-y-4 max-w-6xl">
           <div className="max-h-20 max-w-20 h-12 w-12 md:h-18 md:w-18 flex justify-center items-center rounded-full bg-gray-100">
             <PiTreeBold size={46} className="text-white" />
           </div>
@@ -47,30 +47,30 @@ function FlagShip() {
         </div>
 
         {/* description of site */}
-        <div className="grid grid-cols-2 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
           <Card
-            icon={<IoLocationSharp size={40} className="text-green-500" />}
+            icon={<IoLocationSharp  className="text-green-500 size-8 lg:size-10" />}
             name={"Location & Processing Facility"}
             par={
               "Located in Mahankal-03, Lalitpur operating under a Public-Private-Cooperative Partnership (PPCP) model, this processing facility can process up to 1,000 kg of leaves and twigs per day, with all raw materials sourced from over 400,000 plantation-grown trees across Lalitpur, Kavre, Sindhuli, and Makwanpur districts."
             }
           />
           <Card
-            icon={<HiMiniUserGroup size={40} className="text-green-500" />}
+            icon={<HiMiniUserGroup className="text-green-500 size-8 lg:size-10" />}
             name={"Farmer Involvement"}
             par={
               "Farmers benefit from technical training, buy-back guarantees, and shared ownership of the project infrastructure over a 15-year plan."
             }
           />
           <Card
-            icon={<RiGlobalFill size={40} className="text-green-500" />}
+            icon={<RiGlobalFill  className="text-green-500 size-8 lg:size-10" />}
             name={"Products & Market"}
             par={
               "Targeted for export to Indian pharmaceutical labs, European buyers, and cancer research institutions. Ongoing R&D includes exploring the development of 7-troc Paclitaxel and full Paclitaxel synthesis in Nepal."
             }
           />
           <Card
-            icon={<FaLeaf size={40} className="text-green-500" />}
+            icon={<FaLeaf  className="text-green-500 size-8 lg:size-10" />}
             name={"Compliance & Sustainability"}
           >
             {/* calling children  */}
@@ -90,7 +90,7 @@ function FlagShip() {
 
         {/* lab  */}
         <Card
-          icon={<ImLab size={40} className="text-green-500" />}
+          icon={<ImLab  className="text-green-500 size-8 lg:size-10" />}
           name={"Scientific Extraction & Laboratory Testing"}
           description={
             "Advanced technologies such as microwave-assisted extraction, solvent filtration, and fractional distillation are used to isolate 10-DAB III with 95-99% purity."
@@ -100,7 +100,7 @@ function FlagShip() {
             "Advanced technologies such as microwave-assisted extraction, solvent filtration, and fractional distillation are used to isolate 10-DAB III with 95–99% purity"
           }
         >
-          <ul className="flex flex-col space-y-2 list-disc text-sm">
+          <ul className="flex flex-col space-y-2 list-disc text-sm lg:text-lg">
             To ensure global pharmaceutical Card standards, MHBL partners with
             national and international laboratories for:
             <li>
@@ -117,7 +117,7 @@ function FlagShip() {
         {/* Summary  */}
         <div className=" rounded-2xl container mx-auto bg-white shadow-2xl p-8 flex flex-col justify-center items-center space-y-4 ">
           <div className="max-h-20 max-w-20 h-12 w-12 md:h-18 md:w-18 flex justify-center items-center rounded-full bg-gray-200">
-            <MdFavorite size={40} className="text-one" />
+            <MdFavorite className="text-one size-8 lg:size-10" />
           </div>
           <div className=" flex flex-col space-y-2 text-center">
             <Heading heading={"Impact Summary"} redesign={"text-black"}>

@@ -1,34 +1,36 @@
-import { useEffect, useState } from "react"
-import faq from "../../api/faq.json"
-import Faq from './Faq'
+import { useEffect, useState } from "react";
+import faq from "../../api/faq.json";
+import Faq from "./Faq";
 
 function Accordian() {
-    const [data,setData]=useState([])
-    const [activeId,setActiveId]=useState(false)
+  const [data, setData] = useState([]);
+  const [activeId, setActiveId] = useState(false);
 
+  useEffect(() => {
+    setData(faq);
+  }, []);
+  console.log(data);
 
-useEffect(()=>{
-
-setData(faq)
-
-},[])
-console.log(data)
-
-
-
-const handleButtonClick=(id)=>{
-     setActiveId((prevId)=>(prevId===id?false:id))
-}
+  const handleButtonClick = (id) => {
+    setActiveId((prevId) => (prevId === id ? false : id));
+  };
 
   return (
     <>
-            <ul className="section-accordion">{
-                data.map((currElem)=>{
-                    return <Faq key={currElem.id} currElem={currElem} isActive={activeId===currElem.id} onToggle={()=>handleButtonClick(currElem.id)}/>
-                })
-            }</ul>
+      <ul className="text-sm lg:text-lg">
+        {data.map((currElem) => {
+          return (
+            <Faq
+              key={currElem.id}
+              currElem={currElem}
+              isActive={activeId === currElem.id}
+              onToggle={() => handleButtonClick(currElem.id)}
+            />
+          );
+        })}
+      </ul>
     </>
-  )
+  );
 }
 
-export default Accordian
+export default Accordian;
