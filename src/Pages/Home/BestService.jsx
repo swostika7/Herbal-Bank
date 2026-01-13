@@ -1,6 +1,8 @@
 import { PiPlant } from "react-icons/pi";
 import PlantLogo from "../../components/PlantLogo";
 import Heading from "../../components/Heading";
+import Buttons from "@/components/Buttons";
+
 
 const Services = [
   {
@@ -21,24 +23,24 @@ const Services = [
     description:
       "We collaborate with clients to develop custom herbal formulations to meet specific requirements. Our R&D team is dedicated to innovating new products using Nepal’s rich herbal resources.",
   },
-  {
-    img: "/assets/p3.png",
-    name: "Export Assistance",
-    description:
-      "As we expand into international markets, we provide complete export assistance, ensuring compliance with Card standards and regulations.",
-  },
-  {
-    img: "/assets/p4.png",
-    name: "Consultancy Services",
-    description:
-      "We offer consultancy services to individuals and organizations interested in herbal farming, production, or entering the herbal industry.",
-  },
-  {
-    img: "/assets/p5.png",
-    name: "Machineries",
-    description:
-      "We offer different machines for the Herbal processing as well. Machineries such as Essential Oil Extraction Unit, Spray Dryer, Extraction and Concentration Unit are easily available with us.",
-  },
+  // {
+  //   img: "/assets/p3.png",
+  //   name: "Export Assistance",
+  //   description:
+  //     "As we expand into international markets, we provide complete export assistance, ensuring compliance with Card standards and regulations.",
+  // },
+  // {
+  //   img: "/assets/p4.png",
+  //   name: "Consultancy Services",
+  //   description:
+  //     "We offer consultancy services to individuals and organizations interested in herbal farming, production, or entering the herbal industry.",
+  // },
+  // {
+  //   img: "/assets/p5.png",
+  //   name: "Machineries",
+  //   description:
+  //     "We offer different machines for the Herbal processing as well. Machineries such as Essential Oil Extraction Unit, Spray Dryer, Extraction and Concentration Unit are easily available with us.",
+  // },
 ];
 function BestService() {
   return (
@@ -71,7 +73,8 @@ function BestService() {
           </div>
         ))}
       </div>
-      <br />
+      
+      <Buttons buttonText={"View More"} buttonStyles={"text-black"}/>
     </div>
   );
 }
