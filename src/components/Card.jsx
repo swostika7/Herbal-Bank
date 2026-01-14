@@ -1,8 +1,8 @@
-function Card({ icon, name, children, img, par, aboutcard }) {
+function Card({ icon, name, children, img, paragraph, cardDesign,imageDesign }) {
   return (
     <div>
       <div
-        className={`bg-white rounded-xl container mx-auto p-6 w-full text-center flex flex-col space-y-3 h-full shadow hover:shadow-2xl ${aboutcard}`}
+        className={`bg-white rounded-xl container mx-auto p-6 w-full text-center flex flex-col space-y-3 h-full shadow hover:shadow-2xl ${cardDesign}`}
       >
         {/* logo */}
         <div className="flex justify-center">
@@ -13,12 +13,12 @@ function Card({ icon, name, children, img, par, aboutcard }) {
         {/* content  */}
         <div className="flex flex-col space-y-2">
           <h2 className="font-semibold text-xl lg:text-2xl">{name}</h2>
-          <p className="text-gray-700 text-sm md:text-lg lg:text-lg">{par}</p>
+          <p className="text-gray-700 text-sm md:text-base lg:text-base">{paragraph}</p>
         </div>
         <div className="flex justify-center">
-          <img src={img} />
+          <img src={img} className={`${imageDesign}`} />
         </div>
-        <p className="text-gray-700 text-sm lg:text-lg">{children}</p>
+        <p className="text-gray-700 text-sm lg:text-base">{children}</p>
       </div>
     </div>
   );

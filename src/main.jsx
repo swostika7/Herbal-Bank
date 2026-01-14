@@ -6,6 +6,7 @@ import HomeLayouts from "./layouts/HomeLayouts.jsx";
 import Services from "./Pages/Services/Services.jsx";
 import About from "./Pages/About/About.jsx";
 import Products from "./Pages/Products/Products.jsx";
+import Career from "./Pages/Career/Career";
 
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ ReactDOM.createRoot(root).render(
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/career" element={<Career />} />
       </Route>
       
     </Routes>

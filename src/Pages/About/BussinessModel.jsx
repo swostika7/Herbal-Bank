@@ -16,7 +16,7 @@ function BussinessModel() {
           </h1>
           {/* line  */}
           <div className=" container mx-auto p-0.5 w-1/4 lg:w-1/14 bg-linear-to-r from-green-500 to-blue-700"></div>
-          <p className="text-lg text-gray-600 ">
+          <p className="text-base text-gray-600 ">
             Strategic Collaborations, Innovative Processing, and Community
             Engagement
           </p>
@@ -26,35 +26,35 @@ function BussinessModel() {
             <Card
               icon={<FaTruckMonster size={30} className="text-green-700" />}
               name={"Commercial Production & Farmer"}
-              par={
+              paragraph={
                 "Partnering with 72+ Agriculture Resource Centers (ARCs) and herbal cooperatives for large-scale cultivation and buy back guarantee of different herbs like Chiraito, Pakhanbed, Kutki, and Taxus (Lothsalla)."
               }
-              aboutcard={"border-t-4 border-green-500"}
+              cardDesign={"border-t-4 border-green-500"}
             />
             <Card
               icon={<LuFactory size={30} className="text-green-700" />}
               name={"Processing & Value Addition"}
-              par={
+              paragraph={
                 "Industrial-scale production and processing of high-value products like 10-DAB III (from Taxus), turmeric powder, and herbal honey in collaborations."
               }
-              aboutcard={"border-t-4 border-green-500"}
+              cardDesign={"border-t-4 border-green-500"}
             />
             <Card
               icon={<LuPlane size={30} className="text-green-700" />}
               name={"Export & Market Linkages"}
-              par={
+              paragraph={
                 "Partnering with pharmaceutical, nutraceutical, and cosmetic industries for the Certified exports to India, China, the EU, and the Middle East."
               }
-              aboutcard={"border-t-4 border-green-500"}
+              cardDesign={"border-t-4 border-green-500"}
             />
 
             <Card
               icon={<SiRoamresearch size={30} className="text-green-700" />}
               name={"Research & Product Development"}
-              par={
+              paragraph={
                 "Collaboration with Universities, National/International laboratories for the development of Ayurvedic, herbal, and functional food products."
               }
-              aboutcard={"border-t-4 border-green-500"}
+              cardDesign={"border-t-4 border-green-500"}
             />
           </div>
         </div>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div>
-      <div className="bg-black text-white py-6">
+      <div className="bg-black text-white py-6 ">
         <div className="max-w-7xl mx-auto p-8">
           <img src="assets/muktinath.png" className="h-14 w-auto"></img>
           <div className="flex flex-col space-y-2 py-6">

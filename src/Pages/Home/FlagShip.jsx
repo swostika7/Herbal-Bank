@@ -51,21 +51,21 @@ function FlagShip() {
           <Card
             icon={<IoLocationSharp  className="text-green-500 size-8 lg:size-10" />}
             name={"Location & Processing Facility"}
-            par={
+            paragraph={
               "Located in Mahankal-03, Lalitpur operating under a Public-Private-Cooperative Partnership (PPCP) model, this processing facility can process up to 1,000 kg of leaves and twigs per day, with all raw materials sourced from over 400,000 plantation-grown trees across Lalitpur, Kavre, Sindhuli, and Makwanpur districts."
             }
           />
           <Card
             icon={<HiMiniUserGroup className="text-green-500 size-8 lg:size-10" />}
             name={"Farmer Involvement"}
-            par={
+            paragraph={
               "Farmers benefit from technical training, buy-back guarantees, and shared ownership of the project infrastructure over a 15-year plan."
             }
           />
           <Card
             icon={<RiGlobalFill  className="text-green-500 size-8 lg:size-10" />}
             name={"Products & Market"}
-            par={
+            paragraph={
               "Targeted for export to Indian pharmaceutical labs, European buyers, and cancer research institutions. Ongoing R&D includes exploring the development of 7-troc Paclitaxel and full Paclitaxel synthesis in Nepal."
             }
           />
@@ -96,11 +96,13 @@ function FlagShip() {
             "Advanced technologies such as microwave-assisted extraction, solvent filtration, and fractional distillation are used to isolate 10-DAB III with 95-99% purity."
           }
           img={"/assets/lab.png"}
-          par={
+          imageDesign={" object-contain"}
+          paragraph={
             "Advanced technologies such as microwave-assisted extraction, solvent filtration, and fractional distillation are used to isolate 10-DAB III with 95–99% purity"
           }
+        
         >
-          <ul className="flex flex-col space-y-2 list-disc text-sm lg:text-lg">
+          <ul className="flex flex-col space-y-2 list-disc text-sm lg:text-base">
             To ensure global pharmaceutical Card standards, MHBL partners with
             national and international laboratories for:
             <li>

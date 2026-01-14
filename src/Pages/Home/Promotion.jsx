@@ -56,7 +56,8 @@ function Promotion() {
   return (
     <>
       <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:items-center bg-one">
+        <div className=" bg-one">
+          <div className="max-w-7xl grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:items-center">
           {/* yarsagumba  */}
           <div>
             <img
@@ -80,6 +81,7 @@ function Promotion() {
               </div>
             ))}
             
+          </div>
           </div>
         </div>
 

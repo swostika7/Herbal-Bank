@@ -28,18 +28,18 @@ function BOD() {
   return (
     <>
       <div className="bg-gray-100 h-full p-5 ">
-        <div className="container mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl justify-center">
         <Heading heading={"Board of Directors"} redesign={"text-center"} />
         {/* picture and description  */}
         <div className="flex flex-col space-y-10  ">
           {Director.map((items, i) => (
-            <div key={i} className=" grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 ">
+            <div key={i} className=" flex flex-col justify-center items-center md:flex-col lg:flex-row space-x-10 space-y-4 ">
               {/* image  */}
               <div className="flex justify-center items-center ">
                 <img
                   src={items.img}
                   alt={items.name}
-                  className="object-cover"
+                  className="h-full lg:h-100 w-full"
                 />
               </div>
 

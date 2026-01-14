@@ -4,11 +4,11 @@ import Heading from "../../components/Heading";
 function AboutHome() {
   return (
     <div className="shadow-2xl ">
-      <div className=" bg-[url(/assets/back.png)] object-fill bg-cover w-full bg-center h-[60vh] bg-no-repeat">
+      <div className=" bg-[url(/assets/back.png)] object-fill bg-cover w-full bg-center h-100 bg-no-repeat">
         <div className="bg-black opacity-80 h-full text-center flex flex-col justify-center items-center">
           {/* called heading  */}
           <Heading heading={"About Us"} redesign={"text-white "}>
-            <p className="text-white text-sm lg:text-lg p-3">
+            <p className="text-white text-sm lg:text-base p-3">
               Muktinath Herbal Bank Limited , an associate company of Muktinath
               Krishi Company Limited, established in the year 2022 with the
               vision of transforming Nepal's medicinal and aromatic plants

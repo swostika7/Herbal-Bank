@@ -172,9 +172,9 @@ const Herbal = [
 function Products() {
   return (
     <>
-    <div className="p-5 py-24 container mx-auto lg:pl-10 lg:pr-10">
+    <div className="p-5 py-24 max-w-6xl mx-auto">
         <Heading heading={"All Products"} redesign={"text-green-500 text-center"}/>
-      <div className="grid grid-cols-1 gap-4 container mx-auto md:grid-cols-2 lg:grid-cols-4 max-w-6xl">
+      <div className="grid grid-cols-1 gap-4 container mx-auto md:grid-cols-2 lg:grid-cols-3 max-w-6xl">
         {Herbal.map((items, i) => (
           <ProductCard
             img={items.picture}
