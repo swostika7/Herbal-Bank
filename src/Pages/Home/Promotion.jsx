@@ -57,44 +57,58 @@ function Promotion() {
     <>
       <div>
         <div className=" bg-one">
-          <div className="max-w-7xl grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:items-center">
-          {/* yarsagumba  */}
-          <div>
-            <img
-              src="/assets/yarsagumba.png"
-              alt="yarsagumba"
-              className="md:w-full w-auto"
-            />
-          </div>
-          {/* promotion  */}
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:items-center">
+            {/* yarsagumba  */}
+            <div>
+              <img
+                src="/assets/yarsagumba.png"
+                alt="yarsagumba"
+                className="md:w-full w-auto"
+              />
+            </div>
+            {/* promotion  */}
 
-          <div className="p-5 flex flex-col space-y-9 justify-center items-center ">
-            {Reused.map((items, i) => (
-              <div className="flex space-x-6 ">
-                <div className="text-white text-5xl lg:text-6xl">
-                  <items.Icon />
+            <div className="p-5 flex flex-col space-y-9 justify-center items-center ">
+              {Reused.map((items, i) => (
+                <div className="flex space-x-6 ">
+                  <div className="text-white text-5xl lg:text-6xl">
+                    <items.Icon />
+                  </div>
+                  <div className="flex flex-col space-y-2">
+                    <h1 className="font-semibold text-2xl">{items.title}</h1>
+                    <p className="text-sm">{items.description}</p>
+                  </div>
                 </div>
-                <div className="flex flex-col space-y-2">
-                  <h1 className="font-semibold text-2xl">{items.title}</h1>
-                  <p className="text-sm">{items.description}</p>
-                </div>
-              </div>
-            ))}
-            
-          </div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* photo animation  */}
-        <div className="grid grid-cols-7  lg:h-50 w-full overflow-hidden scroll-smooth md:scroll-auto ">
-          {Image.map((items, i) => (
-            <img
-              key={i}
-              src={items.img}
-              alt={items.name}
-              className="object-cover h-full  w-full"
-            />
-          ))}
+        <div className="w-full overflow-hidden">
+          <div className="grid grid-flow-col animate-loop">
+            {/* First Images */}
+            {Image.map((items, i) => (
+              <div key={`set1-${i}`} className="w-62 h-60">
+                <img
+                  src={items.img}
+                  alt={items.name}
+                  className="object-cover h-full w-full"
+                />
+              </div>
+            ))}
+
+            {/* Second Images  */}
+            {Image.map((items, i) => (
+              <div key={`set2-${i}`} className="w-62 h-60" >
+                <img
+                  src={items.img}
+                  alt={items.name}
+                  className="object-cover h-full w-full"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

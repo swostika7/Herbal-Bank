@@ -33,7 +33,7 @@ function BOD() {
         {/* picture and description  */}
         <div className="flex flex-col space-y-10  ">
           {Director.map((items, i) => (
-            <div key={i} className=" flex flex-col justify-center items-center md:flex-col lg:flex-row space-x-10 space-y-4 ">
+            <div key={i} className=" flex flex-col justify-center md:flex-col lg:flex-row space-x-10 space-y-4 ">
               {/* image  */}
               <div className="flex justify-center items-center ">
                 <img

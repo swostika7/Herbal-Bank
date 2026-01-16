@@ -29,7 +29,7 @@ function Product() {
           </div>
         </div>
         {/* List of products  */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-4 ">
           <ProductCard
             img={"/assets/dab.png"}
             title={"10 DAB-III"}
@@ -55,6 +55,15 @@ function Product() {
             scientificName={"Nardostachys Grandiflora"}
             description={
               "A sacred herb of the Himalayas known for its calming and grounding effects. Jatamansi is used in Ayurvedic oils, incense, and stress-relief remedies. It supports mental clarity, sleep, and emotional balance."
+            }
+          />
+          <ProductCard
+            img={"/assets/gurjo.png"}
+            imageSize={""}
+            title={"Gurjo"}
+            scientificName={"Tinospora sinensis"}
+            description={
+              "A powerful adaptogenic herb known for its immune-boosting and detoxifying properties. Guduchi is widely used in Ayurveda to support liver function, reduce inflammation, and enhance resilience against infections. Also valued for managing blood sugar and promoting vitality."
             }
           />
         </div>

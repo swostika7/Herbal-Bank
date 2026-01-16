@@ -12,6 +12,16 @@ body {
     --color-four:#e8ffe4;   
     --color-five:#4c4a4a;   
     --gradient-one: linear-gradient(148deg, rgba(0,58,21,0.85) 0%, #003a15 100%);
+    --animate-loop: loop 10s linear infinite;
+
+  @keyframes loop {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 }
 
  backgroundColor {

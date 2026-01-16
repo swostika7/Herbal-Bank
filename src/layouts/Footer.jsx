@@ -11,8 +11,8 @@ function Footer() {
           <img src="assets/muktinath.png" className="h-14 w-auto"></img>
           <div className="flex flex-col space-y-2 py-6">
             <p>Basundhara, Ringroad, Kathmandu</p>
-            <p>+977-01-4950097</p>
-            <p className="hover:underline">info@muktinathitech.com.np</p>
+            <p>+977 9802374101</p>
+            <p className="hover:underline">info@muktinathherbal.com</p>
           </div>
           <p className="border-b text-white py-3"></p>
           <div className="flex justify-between py-6 text-three">

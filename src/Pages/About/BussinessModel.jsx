@@ -22,7 +22,7 @@ function BussinessModel() {
           </p>
 
           {/* models  */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 in">
             <Card
               icon={<FaTruckMonster size={30} className="text-green-700" />}
               name={"Commercial Production & Farmer"}
@@ -47,15 +47,16 @@ function BussinessModel() {
               }
               cardDesign={"border-t-4 border-green-500"}
             />
-
-            <Card
-              icon={<SiRoamresearch size={30} className="text-green-700" />}
-              name={"Research & Product Development"}
-              paragraph={
-                "Collaboration with Universities, National/International laboratories for the development of Ayurvedic, herbal, and functional food products."
-              }
-              cardDesign={"border-t-4 border-green-500"}
-            />
+            <div className="col-span-3 ">
+              <Card
+                icon={<SiRoamresearch size={30} className="text-green-700" />}
+                name={"Research & Product Development"}
+                paragraph={
+                  "Collaboration with Universities, National/International laboratories for the development of Ayurvedic, herbal, and functional food products."
+                }
+                cardDesign={"border-t-4 border-green-500"}
+              />
+            </div>
           </div>
         </div>
       </div>
