@@ -57,7 +57,7 @@ function Promotion() {
     <>
       <div>
         <div className=" bg-one">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:items-center">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:items-center">
             {/* yarsagumba  */}
             <div>
               <img
@@ -85,7 +85,7 @@ function Promotion() {
         </div>
 
         {/* photo animation  */}
-        <div className="w-full overflow-hidden">
+        <div className="w-full max-w-full overflow-hidden">
           <div className="grid grid-flow-col animate-loop">
             {/* First Images */}
             {Image.map((items, i) => (

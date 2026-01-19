@@ -3,7 +3,7 @@ import React from "react";
 function ProductCard({ img, title, scientificName, description,imageSize,reDesign }) {
   return (
     <div>
-      <div  className={`shadow rounded-md text-center hover:shadow-green-200 bg-white overflow-hidden h-full w-full border-b-2 border-one space-y-2 ${reDesign}`}>
+      <div  className={`shadow rounded-md text-center hover:shadow-xl bg-white overflow-hidden h-full w-full hover:shadow-three border space-y-2 transform transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  ${reDesign}`}>
         <div className="h-60 w-auto">
         <img src={img} className={`h-full w-full ${imageSize}`} alt={title}/>
         </div>

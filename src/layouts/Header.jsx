@@ -6,6 +6,7 @@ import { RiMenu2Line, RiCloseLine } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [careerOpen, setCareerOpen] = useState(false);
@@ -22,7 +23,7 @@ function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  //  mobile navigation
+  // ` mobile navigation
   const closeMobileMenu = () => {
     setIsOpen(false);
     setCareerOpen(false);
@@ -30,8 +31,8 @@ function Header() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center h-16 lg:h-20 p-4 lg:p-0">
+      <div className="max-w-7xl mx-auto px-5">
+        <div className="flex justify-between items-center h-16 lg:h-20  lg:p-0">
           
           {/* Logo */}
           <Link to="/" onClick={closeMobileMenu}>
@@ -53,7 +54,7 @@ function Header() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setCareerOpen(!careerOpen)}
-                className="flex items-center gap-1 font-medium focus:outline-none"
+                className="flex items-center gap-1  focus:outline-none"
               >
                 Career{" "}
                 <ChevronDown

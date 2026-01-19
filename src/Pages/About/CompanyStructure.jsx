@@ -8,7 +8,7 @@ function CompanyStructure() {
       </h3>
       <img src="/assets/management.png" 
       alt="companyStructure"
-      className="size-full lg:size-1/2" />
+      className="size-1/2" />
     </div>
   );
 }

@@ -10,7 +10,7 @@ function BussinessModel() {
     <>
       {/* business model  */}
       <div className="bg-four flex flex-col space-y-4 p-5 text-center">
-        <div className="container mx-auto max-w-6xl  space-y-4">
+        <div className="container mx-auto max-w-7xl  space-y-4">
           <h1 className="text-2xl font-semibold text-green-500 ">
             Our Business Model
           </h1>
@@ -47,7 +47,7 @@ function BussinessModel() {
               }
               cardDesign={"border-t-4 border-green-500"}
             />
-            <div className="col-span-3 ">
+           
               <Card
                 icon={<SiRoamresearch size={30} className="text-green-700" />}
                 name={"Research & Product Development"}
@@ -56,7 +56,7 @@ function BussinessModel() {
                 }
                 cardDesign={"border-t-4 border-green-500"}
               />
-            </div>
+            
           </div>
         </div>
       </div>

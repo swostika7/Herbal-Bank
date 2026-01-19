@@ -7,7 +7,7 @@ import StrategicGoals from "./StrategicGoals";
 function About() {
   return (
     <>
-      <div className="">
+      <div className="mt-20">
         <Mission />
         <StrategicGoals />
         <BussinessModel />

@@ -7,7 +7,7 @@ import Buttons from "../../components/Buttons";
 function Product() {
   return (
     <div className=" bg-four p-5 ">
-      <div className="z-10 pt-62 md:pt-90 space-y-8 lg:pt-40 md:overflow-hidden max-w-6xl container mx-auto ">
+      <div className="z-10 pt-62 md:pt-90 space-y-8 lg:pt-40 md:overflow-hidden max-w-7xl container mx-auto ">
         <div>
           {/* logo  */}
           <PlantLogo />

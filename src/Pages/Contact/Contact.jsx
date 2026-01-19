@@ -3,15 +3,15 @@ import { MapPin, Mail, Phone, Building2 } from "lucide-react";
 
 function Contact() {
   return (
-    <section className="min-h-screen bg-four pt-24 ">
-      <div className="max-w-6xl mx-auto">
+    <section className="min-h-screen bg-four ">
+      <div className="max-w-7xl mx-auto mt-20 p-4 space-y-4 ">
         {/* Heading */}
-        <div className="text-center mb-10 sm:mb-14">
+        <div className="text-center ">
           <h2 className="text-3xl sm:text-4xl font-bold">
             Contact <span className="text-one">Us</span>
           </h2>
           <p className="mt-3 sm:mt-4 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
-            Reach out to us for any solutions, partnerships, or inquiries.
+            Reach out to us for any solutions or inquiries.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ function Contact() {
 
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-one" />
-                  <span>+977 9802374101</span>
+                  <span>ph: +977 9802374101</span>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ function Contact() {
               Send Us a Message
             </h3>
             <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
-              We usually respond within one business day.
+              Give Us a call or fill in the contact form
             </p>
 
             <form className="space-y-5 sm:space-y-6">

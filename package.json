@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",
     "add": "^2.0.6",
@@ -17,6 +18,8 @@
     "button": "^1.1.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dialog": "^0.3.1",
+    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.0",
@@ -25,7 +28,7 @@
     "react-router": "^7.11.0",
     "react-router-dom": "^7.11.0",
     "router-dom": "^3.0.3",
-    "shadcn": "^3.6.3",
+    "shadcn": "^3.7.0",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.18"
   },

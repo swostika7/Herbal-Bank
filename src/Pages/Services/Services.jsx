@@ -43,12 +43,12 @@ const item = [
 function Services() {
   return (
     <>
-      <div className="pt-25 p-4 max-w-6xl mx-auto">
+      <div className="pt-25 p-4 max-w-7xl mx-auto">
         <PlantLogo />
         <Heading heading={"Our Best Services"} redesign={"text-one flex justify-center"}/>
 
         <div className="flex ">
-          <div className="grid grid-cols-1 gap-4 container mx-auto md:grid-cols-2 lg:grid-cols-3 max-w-6xl">
+          <div className="grid grid-cols-1 gap-4 container mx-auto md:grid-cols-2 lg:grid-cols-3 max-w-7xl">
             {item.map((items, i) => (
               <ProductCard
                 img={items.img}
