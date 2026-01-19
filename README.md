@@ -1,2 +1,2 @@
 # Herbal-Bank
-It is a project of herbal collection.
+It is a Front-end project of herbal collection.
