@@ -4,7 +4,6 @@ import { IoLocationSharp } from "react-icons/io5";
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { RiGlobalFill } from "react-icons/ri";
 import { FaLeaf } from "react-icons/fa6";
-import { MdFavorite } from "react-icons/md";
 import { ImLab } from "react-icons/im";
 import Card from "../../components/Card";
 import Heading from "../../components/Heading";
@@ -21,7 +20,7 @@ function FlagShip() {
           {/* called heading  */}
           <Heading
             heading={"Our Flagship Project"}
-            redesign={" text-center text-one"}
+            redesign={" text-center text-primary"}
           >
             <p className="text-three text-center">
               Building a sustainable future for Nepal's herbal industry
@@ -86,74 +85,55 @@ function FlagShip() {
             >
               {/* calling children  */}
               <div className="flex flex-col items-center">
-              <ul className="flex flex-col list-disc space-y-2">
-                <li>
-                  Fully aligned with Forest Act 2019, CITES Appendix II, and
-                  NTFP policies
-                </li>
-                <li>
-                  Only plantation-grown material is used (no wild harvesting)
-                </li>
-                <li>Environmental Impact Assessments (IEE/EIA) completed</li>
-                <li>Government royalty: NPR 50/kg of raw material</li>
-              </ul>
+                <ul className="flex flex-col list-disc space-y-2">
+                  <li>
+                    Fully aligned with Forest Act 2019, CITES Appendix II, and
+                    NTFP policies
+                  </li>
+                  <li>
+                    Only plantation-grown material is used (no wild harvesting)
+                  </li>
+                  <li>Environmental Impact Assessments (IEE/EIA) completed</li>
+                  <li>Government royalty: NPR 50/kg of raw material</li>
+                </ul>
               </div>
             </Card>
           </div>
 
           {/* lab  */}
-          <Card
-            icon={<ImLab className="text-green-500 size-8 lg:size-10" />}
-            name={"Scientific Extraction & Laboratory Testing"}
-            description={
-              "Advanced technologies such as microwave-assisted extraction, solvent filtration, and fractional distillation are used to isolate 10-DAB III with 95-99% purity."
-            }
-            img={"/assets/lab.png"}
-            imageDesign={" object-contain"}
-            paragraph={
-              "To ensure global pharmaceutical quality standards, MHBL partners with national and international laboratories for:"
-            }
-          >
-            <div className="flex flex-col items-center">
-              <p>
-                To ensure global pharmaceutical Card standards, MHBL partners
-                with national and international laboratories for:
-              </p>
-              <ul className="flex flex-col space-y-2 list-disc text-sm lg:text-base">
-                <li>
-                  HPLC (High-Performance Liquid Chromatography) for purity
-                  testing
-                </li>
-                <li>Microbial & heavy metal screening</li>
-                <li>Solvent residue testing</li>
-                <li>
-                  Compliance with international export norms and CITES
-                  regulations
-                </li>
-              </ul>
-            </div>
-          </Card>
-
-          {/* Summary  */}
-          <div className=" rounded-2xl container mx-auto bg-white shadow-2xl p-8 flex flex-col justify-center items-center space-y-4 ">
-            <div className="max-h-20 max-w-20 h-12 w-12 md:h-18 md:w-18 flex justify-center items-center rounded-full bg-gray-200">
-              <MdFavorite className="text-one size-8 lg:size-10" />
-            </div>
-            <div className=" flex flex-col space-y-2 text-center">
-              <Heading heading={"Impact Summary"} redesign={"text-black"}>
-                <p className="text-gray-700">
-                  This project not only contributes to global cancer care but
-                  also empowers rural communities through cooperative ownership,
-                  revenue sharing, and sustainable employment.
+          <div>
+            <Card
+              icon={<ImLab className="text-green-500 size-8 lg:size-10" />}
+              name={"Scientific Extraction & Laboratory Testing"}
+              description={
+                "Advanced technologies such as microwave-assisted extraction, solvent filtration, and fractional distillation are used to isolate 10-DAB III with 95-99% purity."
+              }
+              img={"/assets/lab.png"}
+              imageDesign={" object-contain"}
+              paragraph={
+                "To ensure global pharmaceutical quality standards, MHBL partners with national and international laboratories for:"
+              }
+           
+            >
+              <div className="flex flex-col items-center">
+                <p>
+                  To ensure global pharmaceutical Card standards, MHBL partners
+                  with national and international laboratories for:
                 </p>
-              </Heading>
-              <div className=" container mx-auto bg-gray-200 p-2 border-l-4 border-one">
-                <p className=" italic text-one">
-                  Lothsalla is not just a herb—it's Nepal's answer to global
-                  healing and local empowerment.
-                </p>
+                <ul className="flex flex-col space-y-2 list-disc text-sm lg:text-base">
+                  <li>
+                    HPLC (High-Performance Liquid Chromatography) for purity
+                    testing
+                  </li>
+                  <li>Microbial & heavy metal screening</li>
+                  <li>Solvent residue testing</li>
+                  <li>
+                    Compliance with international export norms and CITES
+                    regulations
+                  </li>
+                </ul>
               </div>
-            </div>
+            </Card>
           </div>
         </div>
       </div>

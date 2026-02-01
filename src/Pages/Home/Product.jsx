@@ -6,7 +6,7 @@ import Buttons from "../../components/Buttons";
 
 function Product() {
   return (
-    <div className=" bg-four p-5 ">
+    <div className=" bg-four p-4 ">
       <div className="z-10 pt-62 md:pt-90 space-y-8 lg:pt-40 md:overflow-hidden max-w-7xl container mx-auto ">
         <div>
           {/* logo  */}
@@ -16,7 +16,7 @@ function Product() {
           <div>
             <Heading
               heading={"Our New Products"}
-              redesign={"flex justify-center items-center text-one "}
+              redesign={"flex justify-center items-center text-primary "}
             >
               <p className=" text-center">
                 Welcome to the realm of nature's bounty at Muktinath Herbal Bank
@@ -73,7 +73,7 @@ function Product() {
           <Link to="/products">
             <Buttons
               buttonText={"See More Products"}
-              buttonStyles={"bg-one "}
+              buttonStyles={"bg-primary "}
             />
           </Link>
         </div>

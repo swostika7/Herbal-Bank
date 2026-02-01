@@ -3,7 +3,7 @@ import { Frown } from "lucide-react";
 function Openings() {
   return (
     <>
-      <div className="min-h-screen bg-four p-4 md:mt-10 lg:mt-20">
+      <div className="min-h-screen bg-four p-4 md:mt-16 lg:mt-20 mt-16">
         <div className="max-w-5xl mx-auto space-y-12 md:space-y-20">
           {/* Header Section */}
           <header className="space-y-6 md:space-y-8">
@@ -16,15 +16,16 @@ function Openings() {
             </div> */}
 
             <div className="text-center space-y-3">
-              <h1 className="font-semibold text-2xl md:text-5xl text-one">
+              <h1 className="font-semibold text-2xl md:text-5xl text-primary">
                 Muktinath Herbal Bank Ltd
               </h1>
-              <div className="text-three text-base md:text-xl font-medium flex justify-center space-x-5">
-                <span>Ph. +977 9802374101</span> <span>|</span>
-                <span> Email: info@muktinathherbal.com</span>
+              <div className="text-three text-base md:text-xl font-medium flex justify-center space-x-5 flex-col md:flex-row lg:flex-row">
+                <span>Ph. +977 9802374101</span>{" "}
+                <span className="hidden lg:block md:block">|</span>
+                <span className=""> Email: info@muktinathherbal.com</span>
               </div>
               <div className="pt-4">
-                <span className="text-two px-6 py-2 rounded-full text-lg md:text-2xl font-semibold uppercase">
+                <span className="text-secondary px-6 py-2 rounded-full text-lg md:text-2xl font-semibold uppercase">
                   Vacancies
                 </span>
               </div>
@@ -34,7 +35,7 @@ function Openings() {
           {/* Content Section */}
           <section className="max-w-4xl mx-auto bg-white shadow-lg border border-four p-12 md:p-24 rounded-3xl transition-all hover:shadow-xl">
             <div className="flex flex-col items-center space-y-4">
-              <Frown className="text-three size-20"/>
+              <Frown className="text-three size-20" />
               <p className="font-semibold text-2xl md:text-4xl text-three">
                 No Job Openings Currently.
               </p>

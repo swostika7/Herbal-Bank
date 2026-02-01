@@ -10,7 +10,7 @@ function Footer() {
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto p-4 text-xs sm:text-sm lg:text-lg">
         {/* Logo image*/}
-        <div className="flex justify-center lg:justify-start mb-6">
+        <div className=" mb-6">
           <img
             src="assets/muktinath.png"
             alt="Muktinath Herbal bank Logo"
@@ -18,50 +18,50 @@ function Footer() {
           />
         </div>
 
-        <div className="grid grid-cols-1 gap-6 text-center sm:text-left lg:grid-cols-3 ">
+        <div className="grid grid-cols-1 gap-6 sm:text-left lg:grid-cols-3 ">
           {/*Contact Section */}
-          <div className="space-y-1 text-xs lg:text-lg">
-            <h2 className="font-bold mb-2">Contact Us</h2>
+          <div className="space-y-1 text-xs lg:text-base">
+            <h2 className="font-bold mb-2 lg:text-lg">Contact Us</h2>
             <p>Basundhara, Kathmandu</p>
             <p>+977-01-4950097</p>
             <p>info@muktinathherbal.com.np</p>
           </div>
 
           {/*Quick Links */}
-          <div className="space-y-1 text-xs lg:text-lg">
-            <h2 className="font-bold mb-2">Quick Links</h2>
-            <Link to="/" className="block hover:text-one">
+          <div className="space-y-1 text-xs lg:text-base">
+            <h2 className="font-bold mb-2 lg:text-lg">Quick Links</h2>
+            <Link to="/" className="block hover:text-primary">
               Home
             </Link>
-            <Link to="/about" className="block hover:text-one">
+            <Link to="/about" className="block hover:text-primary">
               About
             </Link>
-            <Link to="/services" className="block hover:text-one">
+            <Link to="/services" className="block hover:text-primary">
               Services
             </Link>
-            <Link to="/products" className="block hover:text-one">
+            <Link to="/products" className="block hover:text-primary">
               Products
             </Link>
           </div>
 
           {/* Support & Legal */}
-          <div className="space-y-1 text-xs lg:text-lg">
-            <h2 className="font-bold mb-2">Support & Legal</h2>
+          <div className="space-y-1 text-xs lg:text-base">
+            <h2 className="font-bold mb-2 lg:text-lg">Support & Legal</h2>
 
             {/*customer support*/}
             <CustomerDilogue>
-              <p className="hover:cursor-pointer hover:underline hover:text-one">
+              <p className="hover:cursor-pointer hover:underline hover:text-primary">
                 Customer Support
               </p>
             </CustomerDilogue>
 
             {/* Privacy and conditions  */}
-            <p className="hover:text-one hover:cursor-pointer hover:underline">
+            <p className="hover:text-primary hover:cursor-pointer hover:underline">
               <Link to="/privacy">Privacy Policy</Link>
             </p>
 
             {/* Terms  */}
-            <p className="hover:text-one hover:cursor-pointer hover:underline ">
+            <p className="hover:text-primary hover:cursor-pointer hover:underline ">
               <Link to="/terms">Terms and Conditions</Link>
             </p>
           </div>
@@ -70,9 +70,9 @@ function Footer() {
         <div className="border-t border-gray-700 my-6"></div>
 
         {/* Footer */}
-        <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
-          <p className="text-center lg:text-left text-three">
-            @{new Date().getFullYear()} Muktinath Herbal Bank Ltd. All rights
+        <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
+          <p className="text-three text-base">
+            ©{new Date().getFullYear()} Muktinath Herbal Bank Ltd. All rights
             reserved.
           </p>
 

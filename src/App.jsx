@@ -2,13 +2,14 @@ import { useState } from "react";
 import "./App.css";
 import Hero from "./Pages/Home/Hero";
 import Product from "./Pages/Home/Product";
-import AboutHome from "./Pages/Home/AboutHome";
+// import AboutHome from "./Pages/Home/AboutHome";
 import BestService from "./Pages/Home/BestService";
 import FlagShip from "./Pages/Home/FlagShip";
 import Header from "./layouts/Header";
 import Promotion from "./Pages/Home/Promotion";
 import Footer from "./layouts/Footer";
 import AccordianMain from "./Pages/Home/AccordianMain";
+import Summary from "./Pages/Home/Summary";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,7 +20,8 @@ function App() {
       <Hero />
       <div className="flex flex-col space-y-10">
         <Product />
-        <AboutHome />
+        {/* <AboutHome /> */}
+        <Summary/>
         <BestService />
         <FlagShip />
         <AccordianMain />

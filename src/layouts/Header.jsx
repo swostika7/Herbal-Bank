@@ -6,10 +6,10 @@ import { RiMenu2Line, RiCloseLine } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 
-
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [careerOpen, setCareerOpen] = useState(false);
+  const [mobileCareerOpen, setMobileCareerOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   // Close dropdown when clicking outside
@@ -31,9 +31,8 @@ function Header() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-5">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16 lg:h-20  lg:p-0">
-          
           {/* Logo */}
           <Link to="/" onClick={closeMobileMenu}>
             <img
@@ -105,17 +104,29 @@ function Header() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden bg-two text-white py-5 space-y-2 absolute top-16 left-0 w-full shadow-lg">
+          <div className="lg:hidden bg-secondary text-white py-5 space-y-2 absolute top-16 left-0 w-full shadow-lg">
             <Link to="/" onClick={closeMobileMenu} className="block px-4 py-3">
               Home
             </Link>
-            <Link to="/about" onClick={closeMobileMenu} className="block px-4 py-3">
+            <Link
+              to="/about"
+              onClick={closeMobileMenu}
+              className="block px-4 py-3"
+            >
               About
             </Link>
-            <Link to="/services" onClick={closeMobileMenu} className="block px-4 py-3">
+            <Link
+              to="/services"
+              onClick={closeMobileMenu}
+              className="block px-4 py-3"
+            >
               Services
             </Link>
-            <Link to="/products" onClick={closeMobileMenu} className="block px-4 py-3">
+            <Link
+              to="/products"
+              onClick={closeMobileMenu}
+              className="block px-4 py-3"
+            >
               Products
             </Link>
 
@@ -124,8 +135,8 @@ function Header() {
               <button
                 className="flex justify-between items-center w-full py-3 font-medium"
                 onClick={(e) => {
-                    e.preventDefault();
-                    setCareerOpen(!careerOpen);
+                  e.preventDefault();
+                  setMobileCareerOpen(!mobileCareerOpen);
                 }}
               >
                 Career{" "}
@@ -136,34 +147,59 @@ function Header() {
                 />
               </button>
 
-              {careerOpen && (
-                <div className="ml-4 flex flex-col space-y-1 border-l border-white/20 pl-4 transition-all">
-                  <Link to="/career/openings" onClick={closeMobileMenu} className="py-2">
+              {mobileCareerOpen && (
+                <div className="ml-4 flex flex-col space-y-1 border-l border-white/20 pl-4 ">
+                  <Link
+                    to="/openings"
+                    onClick={closeMobileMenu}
+                    className="py-2"
+                  >
                     Openings
                   </Link>
-                  <Link to="/working" onClick={closeMobileMenu} className="py-2">
+                  <Link
+                    to="/working"
+                    onClick={closeMobileMenu}
+                    className="py-2"
+                  >
                     Working At Muktinath
                   </Link>
-                  <Link to="/students" onClick={closeMobileMenu} className="py-2">
+                  <Link
+                    to="/students"
+                    onClick={closeMobileMenu}
+                    className="py-2"
+                  >
                     For Students
                   </Link>
                 </div>
               )}
             </div>
-            
-            <Link to="/contact" onClick={closeMobileMenu} className="block px-4 py-3">
+
+            <Link
+              to="/contact"
+              onClick={closeMobileMenu}
+              className="block px-4 py-3"
+            >
               Contact Us
             </Link>
 
             {/* Social Icons */}
             <div className="flex text-2xl space-x-4 pl-4 pt-4 border-t border-white/10">
-              <Link to="https://www.instagram.com/muktinathkrishicompany/" target="_blank">
+              <Link
+                to="https://www.instagram.com/muktinathkrishicompany/"
+                target="_blank"
+              >
                 <FaInstagram />
               </Link>
-              <Link to="https://www.facebook.com/muktinathkrishiCo.Ltd/" target="_blank">
+              <Link
+                to="https://www.facebook.com/muktinathkrishiCo.Ltd/"
+                target="_blank"
+              >
                 <LiaFacebook />
               </Link>
-              <Link to="https://www.linkedin.com/company/muktinath-krishi-company-ltd" target="_blank">
+              <Link
+                to="https://www.linkedin.com/company/muktinath-krishi-company-ltd"
+                target="_blank"
+              >
                 <CiLinkedin />
               </Link>
             </div>

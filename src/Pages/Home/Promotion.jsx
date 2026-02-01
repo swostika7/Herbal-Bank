@@ -56,7 +56,7 @@ function Promotion() {
   return (
     <>
       <div>
-        <div className=" bg-one">
+        <div className=" bg-primary">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:items-center">
             {/* yarsagumba  */}
             <div>
@@ -100,7 +100,7 @@ function Promotion() {
 
             {/* Second Images  */}
             {Image.map((items, i) => (
-              <div key={`set2-${i}`} className="w-62 h-60" >
+              <div key={`set2-${i}`} className="w-62 h-60">
                 <img
                   src={items.img}
                   alt={items.name}
