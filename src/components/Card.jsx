@@ -12,12 +12,12 @@ function Card({ icon, name, children, img, paragraph, cardDesign,imageDesign }) 
         {/* content  */}
         <div className="flex flex-col space-y-2">
           <h2 className="font-semibold text-xl lg:text-2xl">{name}</h2>
-          <p className="text-gray-700 text-sm md:text-base lg:text-base">{paragraph}</p>
+          <p className="text-muted text-sm md:text-base lg:text-base">{paragraph}</p>
         </div>
         <div className="flex justify-center">
           <img src={img} className={`${imageDesign}`} />
         </div>
-        <div className="text-sm lg:text-base">{children}</div>
+        <div className="text-sm lg:text-base text-muted">{children}</div>
       </div>
   );
 }

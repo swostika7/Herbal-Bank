@@ -10,7 +10,7 @@ function Contact() {
           <h2 className="text-3xl sm:text-4xl font-bold">
             Contact <span className="text-primary">Us</span>
           </h2>
-          <p className="mt-3 sm:mt-4 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+          <p className="mt-3 sm:mt-4 text-muted max-w-2xl mx-auto text-sm sm:text-base">
             Reach out to us for any solutions or inquiries.
           </p>
         </div>
@@ -24,7 +24,7 @@ function Contact() {
                 Company Information
               </h3>
 
-              <div className="space-y-4 sm:space-y-5 text-gray-700 text-sm sm:text-base">
+              <div className="space-y-4 sm:space-y-5 text-muted text-sm sm:text-base">
                 <div className="flex items-start gap-3">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mt-1 text-primary" />
                   <span>
@@ -63,7 +63,7 @@ function Contact() {
             <h3 className="text-xl sm:text-2xl font-semibold mb-2">
               Send Us a Message
             </h3>
-            <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
+            <p className="text-muted mb-6 sm:mb-8 text-sm sm:text-base">
               Give Us a call or fill in the contact form
             </p>
 
@@ -86,7 +86,7 @@ function Contact() {
                 <input
                   type="email"
                   placeholder="muktinathherbal@gmail.com"
-                  className="w-full rounded-xl border border-gray-300 px-4 py-2 "
+                  className="w-full rounded-xl border border-accent px-4 py-2 "
                 />
               </div>
 
@@ -97,8 +97,12 @@ function Contact() {
                 <textarea
                   rows="5"
                   placeholder="Write your message here..."
-                  className="w-full rounded-xl border border-gray-300 px-4 py-2.5 "
+                  className="w-full rounded-xl border border-accent px-4 py-2.5 "
                 />
+              </div>
+              <div className="flex items-center space-x-3">
+                <input className="h-4 w-4 border border-muted rounded-sm " input type="checkbox"/>
+                <p> Agree the terms and conditions</p>
               </div>
 
               <button

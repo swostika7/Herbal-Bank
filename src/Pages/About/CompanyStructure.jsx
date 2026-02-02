@@ -3,7 +3,7 @@ import React from "react";
 function CompanyStructure() {
   return (
     <div className="p-5 flex flex-col justify-center items-center">
-      <h3 className="font-semibold text-4xl text-green-500">
+      <h3 className="font-semibold text-4xl text-primary">
         Our Company Structure
       </h3>
       <img src="/assets/management.png" 

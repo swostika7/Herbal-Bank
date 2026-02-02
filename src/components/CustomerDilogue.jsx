@@ -22,7 +22,7 @@ function CustomerDilogue({ children }) {
           </DialogTitle>
         </DialogHeader>
 
-        <div className="space-y-4 text-sm text-gray-600">
+        <div className="space-y-4 text-sm text-muted">
           <div className="flex items-center gap-3">
             <IoCallOutline className="text-xl" />
             <span>ph: +977 9802374101</span>

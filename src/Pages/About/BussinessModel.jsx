@@ -11,11 +11,11 @@ function BussinessModel() {
       {/* business model  */}
       <div className="bg-four flex flex-col space-y-4 p-5 text-center">
         <div className="container mx-auto max-w-7xl  space-y-4">
-          <h1 className="text-2xl font-semibold text-green-500 ">
+          <h1 className="text-2xl font-semibold text-primary ">
             Our Business Model
           </h1>
           {/* line  */}
-          <div className=" container mx-auto p-0.5 w-1/4 lg:w-1/14 bg-linear-to-r from-green-500 to-blue-700"></div>
+          <div className=" container mx-auto p-0.5 w-1/4 lg:w-1/14 bg-linear-to-r from-primary to-blue-700"></div>
           <p className="text-base text-gray-600 ">
             Strategic Collaborations, Innovative Processing, and Community
             Engagement
@@ -24,37 +24,37 @@ function BussinessModel() {
           {/* models  */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5 in">
             <Card
-              icon={<FaTruckMonster size={30} className="text-green-700" />}
+              icon={<FaTruckMonster size={30} className="text-primary" />}
               name={"Commercial Production & Farmer"}
               paragraph={
                 "Partnering with 72+ Agriculture Resource Centers (ARCs) and herbal cooperatives for large-scale cultivation and buy back guarantee of different herbs like Chiraito, Pakhanbed, Kutki, and Taxus (Lothsalla)."
               }
-              cardDesign={"border-t-4 border-green-500"}
+              cardDesign={"border-t-4 border-primary"}
             />
             <Card
-              icon={<LuFactory size={30} className="text-green-700" />}
+              icon={<LuFactory size={30} className="text-primary" />}
               name={"Processing & Value Addition"}
               paragraph={
                 "Industrial-scale production and processing of high-value products like 10-DAB III (from Taxus), turmeric powder, and herbal honey in collaborations."
               }
-              cardDesign={"border-t-4 border-green-500"}
+              cardDesign={"border-t-4 border-primary"}
             />
             <Card
-              icon={<LuPlane size={30} className="text-green-700" />}
+              icon={<LuPlane size={30} className="text-primary" />}
               name={"Export & Market Linkages"}
               paragraph={
                 "Partnering with pharmaceutical, nutraceutical, and cosmetic industries for the Certified exports to India, China, the EU, and the Middle East."
               }
-              cardDesign={"border-t-4 border-green-500"}
+              cardDesign={"border-t-4 border-primary"}
             />
            
               <Card
-                icon={<SiRoamresearch size={30} className="text-green-700" />}
+                icon={<SiRoamresearch size={30} className="text-primary" />}
                 name={"Research & Product Development"}
                 paragraph={
                   "Collaboration with Universities, National/International laboratories for the development of Ayurvedic, herbal, and functional food products."
                 }
-                cardDesign={"border-t-4 border-green-500"}
+                cardDesign={"border-t-4 border-primary"}
               />
             
           </div>

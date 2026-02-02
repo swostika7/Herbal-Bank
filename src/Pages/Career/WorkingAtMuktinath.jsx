@@ -37,7 +37,7 @@ function WorkingAtMuktinath() {
             <p className="font-semibold text-2xl md:text-4xl text-three">
               No Job Openings Currently.
             </p>
-            <p className="text-gray-500 text-sm md:text-base">
+            <p className="text-muted text-sm md:text-base">
               Please check back later or follow us for updates.
             </p>
           </div>

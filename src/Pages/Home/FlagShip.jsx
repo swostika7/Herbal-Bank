@@ -54,7 +54,7 @@ function FlagShip() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
             <Card
               icon={
-                <IoLocationSharp className="text-green-500 size-8 lg:size-10" />
+                <IoLocationSharp className="text-primary size-8 lg:size-10" />
               }
               name={"Location & Processing Facility"}
               paragraph={
@@ -63,7 +63,7 @@ function FlagShip() {
             />
             <Card
               icon={
-                <HiMiniUserGroup className="text-green-500 size-8 lg:size-10" />
+                <HiMiniUserGroup className="text-primary size-8 lg:size-10" />
               }
               name={"Farmer Involvement"}
               paragraph={
@@ -72,7 +72,7 @@ function FlagShip() {
             />
             <Card
               icon={
-                <RiGlobalFill className="text-green-500 size-8 lg:size-10" />
+                <RiGlobalFill className="text-primary size-8 lg:size-10" />
               }
               name={"Products & Market"}
               paragraph={
@@ -80,7 +80,7 @@ function FlagShip() {
               }
             />
             <Card
-              icon={<FaLeaf className="text-green-500 size-8 lg:size-10" />}
+              icon={<FaLeaf className="text-primary size-8 lg:size-10" />}
               name={"Compliance & Sustainability"}
             >
               {/* calling children  */}
