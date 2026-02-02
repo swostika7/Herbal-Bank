@@ -51,7 +51,7 @@ function BOD() {
                   key={i}
                   heading={items.name}
                   headingthree={items.postion}
-                  redesign={"text-blue-700"}
+                  redesign={"text-secondary"}
                 >
                   <p>{items.description}</p>{" "}
                 </Heading>
