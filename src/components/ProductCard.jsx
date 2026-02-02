@@ -5,7 +5,7 @@ function ProductCard({ img, title, scientificName, description,imageSize,reDesig
     <div>
       <div  className={`shadow rounded-md text-center hover:shadow-xl bg-white overflow-hidden h-full w-full hover:shadow-three border space-y-2 transform transition hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  ${reDesign}`}>
         <div className="h-60 w-auto">
-        <img src={img} className={`h-full w-full ${imageSize}`} alt={title}/>
+        <img src={img} className={`h-full w-full rounded-sm ${imageSize}`} alt={title}/>
         </div>
         <div className="p-4 space-y-1">
           <h3 className="font-semibold text-xl  lg:text-xl">{title}</h3>
