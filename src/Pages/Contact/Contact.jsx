@@ -29,8 +29,8 @@ function Contact() {
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5 mt-1 text-primary" />
                   <span>
                     Muktinath Herbal Bank Ltd.
-                    <br />
-                    Kathmandu, Nepal
+                <span className="block">  Kathmandu, Nepal</span>
+                  
                   </span>
                 </div>
 

@@ -19,7 +19,6 @@ function AboutHome() {
             </p>
           </Heading>
         </div>
-        <br />
       </div>{" "}
     </div>
   );

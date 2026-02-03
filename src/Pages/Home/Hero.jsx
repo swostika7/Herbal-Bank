@@ -1,5 +1,6 @@
 import Heading from "../../components/Heading";
 import Buttons from "../../components/Buttons";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -25,7 +26,7 @@ function Hero() {
             </p>
 
             <div className="flex justify-center md:justify-start">
-              <Buttons buttonText={"Heal With Us"} />
+             <Link to="/contact"> <Buttons buttonText={"Heal With Us"} /></Link>
             </div>
           </div>
           {/* Microscope Image  */}
@@ -52,7 +53,7 @@ function Hero() {
             {/* Content Area */}
             <div className="p-2 lg:p-0">
               <Heading heading={"Herbal Research Lab in Nepal"}>
-                <p className="text-gray-600">
+                <p className="text-muted">
                   Nestled in the heart of Nepal's pristine landscapes, our
                   Herbal Research Lab stands as a beacon of innovation and
                   discovery. With a focus on harnessing the rich biodiversity of

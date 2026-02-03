@@ -12,12 +12,12 @@ function StrategicGoals() {
         <h1 className="font-semibold text-2xl text-primary ">
           Our Strategic Goals
         </h1>
-        <div className="p-0.5 pr-20 bg-linear-to-r from-primary to-secondary"></div>
+           <div className="p-0.5 w-24 md:w-32 bg-linear-to-r from-primary to-secondary"></div>
         <p className="text-muted">
           Building a sustainable future for Nepal's herbal industry
         </p>
       </div>
-      <br />
+      
 
       {/* Our Strategic Goals */}
       <div className=" grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -69,7 +69,7 @@ function StrategicGoals() {
       </div>
 
       {/* gmp sdg  */}
-      <div className="  text-xs lg:text-sm container mx-auto bg-gray-100 w-full lg:w-2/3 p-4 rounded-full flex justify-center space-x-2 text-center">
+      <div className="  text-xs lg:text-sm container mx-auto bg-muted-foreground w-full lg:w-2/3 p-4 rounded-full flex justify-center space-x-2 text-center">
         <span>
           <span className="font-semibold">GMP</span> : Good Manufacturing
           practices

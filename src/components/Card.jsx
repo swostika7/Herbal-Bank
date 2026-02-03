@@ -5,7 +5,7 @@ function Card({ icon, name, children, img, paragraph, cardDesign,imageDesign }) 
       >
         {/* logo */}
         <div className="flex justify-center">
-          <div className=" max-h-20 max-w-20 h-12 w-12 md:h-18 md:w-18 flex justify-center items-center rounded-full bg-gray-200 ">
+          <div className=" max-h-20 max-w-20 h-12 w-12 md:h-18 md:w-18 flex justify-center items-center rounded-full bg-muted-foreground ">
             <p className="">{icon }</p>
           </div>
         </div>

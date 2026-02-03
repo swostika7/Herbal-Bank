@@ -55,34 +55,42 @@ const Image = [
 function Promotion() {
   return (
     <>
-      <div>
-        <div className=" bg-primary">
-          <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:items-center">
-            {/* yarsagumba  */}
-            <div className="w-full">
-              <img
-                src="/assets/yarsagumba.png"
-                alt="yarsagumba"
-                className="md:w-full w-auto"
-              />
-            </div>
-            {/* promotion  */}
+      
+        <div className="bg-primary overflow-hidden">
+  <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+    
+    {/* Image Section*/}
+    <div className="w-full h-full">
+      <img
+        src="/assets/yarsagumba.png"
+        alt="yarsagumba"
+        className="w-full h-64 md:h-96 lg:h-full object-cover"
+      />
+    </div>
 
-            <div className="p-5 flex flex-col space-y-9 justify-center items-center ">
-              {Reused.map((items, i) => (
-                <div className="flex space-x-6 ">
-                  <div className="text-white text-5xl lg:text-6xl">
-                    <items.Icon />
-                  </div>
-                  <div className="flex flex-col space-y-2">
-                    <h1 className="font-semibold text-2xl">{items.title}</h1>
-                    <p className="text-sm">{items.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+    {/* Promotion  Section */}
+    <div className="p-4 md:p-12 lg:p-16 flex flex-col space-y-8 md:space-y-12 items-start">
+      {Reused.map((items, i) => (
+        <div key={i} className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 text-center sm:text-left">
+          {/* Icon */}
+          <div className="text-white text-5xl lg:text-6xl shrink-0">
+            <items.Icon />
+          </div>
+          
+          {/* Text Content */}
+          <div className="flex flex-col space-y-2 text-white">
+            <h1 className="font-semibold text-xl md:text-2xl leading-tight">
+              {items.title}
+            </h1>
+            <p className="text-sm md:text-base opacity-90 max-w-md">
+              {items.description}
+            </p>
           </div>
         </div>
+      ))}
+    </div>
+  </div>
+
 
         {/* photo animation  */}
         <div className="w-full max-w-full overflow-hidden">

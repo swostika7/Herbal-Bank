@@ -4,7 +4,7 @@ import { LiaFacebook } from "react-icons/lia";
 import { CiLinkedin } from "react-icons/ci";
 import { RiMenu2Line, RiCloseLine } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
+
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,48 +48,7 @@ function Header() {
             <NavLink to="/about">About</NavLink>
             <NavLink to="/services">Services</NavLink>
             <NavLink to="/products">Products</NavLink>
-
-            {/* Career desktop */}
-            <div className="relative" ref={dropdownRef}>
-              <button
-                onClick={() => setCareerOpen(!careerOpen)}
-                className="flex items-center gap-1  focus:outline-none"
-              >
-                Career{" "}
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    careerOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {careerOpen && (
-                <div className="absolute top-full left-0 mt-4 w-56 bg-white shadow-xl rounded-md border py-2 animate-in fade-in zoom-in duration-200">
-                  <NavLink
-                    to="/openings"
-                    onClick={() => setCareerOpen(false)}
-                    className="block px-4 py-3 hover:bg-gray-100"
-                  >
-                    Openings
-                  </NavLink>
-                  <NavLink
-                    to="/working"
-                    onClick={() => setCareerOpen(false)}
-                    className="block px-4 py-3 hover:bg-gray-100"
-                  >
-                    Working At Muktinath
-                  </NavLink>
-                  <NavLink
-                    to="/students"
-                    onClick={() => setCareerOpen(false)}
-                    className="block px-4 py-3 hover:bg-gray-100"
-                  >
-                    For Students
-                  </NavLink>
-                </div>
-              )}
-            </div>
-
+            <NavLink to="/openings">Career</NavLink>
             <NavLink to="/contact">Contact Us</NavLink>
           </div>
 
@@ -130,49 +89,13 @@ function Header() {
               Products
             </Link>
 
-            {/* Career Dropdown in mobile */}
-            <div className="px-4">
-              <button
-                className="flex justify-between items-center w-full py-3 font-medium"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setMobileCareerOpen(!mobileCareerOpen);
-                }}
-              >
-                Career{" "}
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    careerOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-
-              {mobileCareerOpen && (
-                <div className="ml-4 flex flex-col space-y-1 border-l border-white/20 pl-4 ">
-                  <Link
-                    to="/openings"
-                    onClick={closeMobileMenu}
-                    className="py-2"
-                  >
-                    Openings
-                  </Link>
-                  <Link
-                    to="/working"
-                    onClick={closeMobileMenu}
-                    className="py-2"
-                  >
-                    Working At Muktinath
-                  </Link>
-                  <Link
-                    to="/students"
-                    onClick={closeMobileMenu}
-                    className="py-2"
-                  >
-                    For Students
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link
+              to="/openings"
+              onClick={closeMobileMenu}
+              className="block px-4 py-3"
+            >
+              Career
+            </Link>
 
             <Link
               to="/contact"

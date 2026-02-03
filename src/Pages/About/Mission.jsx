@@ -1,12 +1,12 @@
 import React from "react";
-import AboutHome from "../Home/AboutHome";
+import AboutHome from "./AboutHome";
 import Card from "../../components/Card";
 import { LuLeaf } from "react-icons/lu";
 import { BiBullseye } from "react-icons/bi";
 
 function Mission() {
   return (
-    <div className="bg-gray-200 lg:p-0">
+    <div className="bg-muted-foreground lg:p-0">
       <div className="">
         <AboutHome />
       </div>

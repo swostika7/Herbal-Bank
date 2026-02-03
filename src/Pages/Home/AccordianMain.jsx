@@ -5,7 +5,7 @@ import Heading from "../../components/Heading";
 const AccordianMain = () => {
   return (
     <>
-      <div className="p-3 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-1 lg:grid-cols-2 space-x-4 container mx-auto max-w-7xl">
+      <div className="py-2 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-1 lg:grid-cols-2 space-x-4 container mx-auto max-w-7xl">
         <div className="h-110">
           <img
             src="/assets/faq1.png"

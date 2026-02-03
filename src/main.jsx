@@ -9,8 +9,6 @@ import Products from "./Pages/Products/Products.jsx";
 import Contact from "./Pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import Openings from "./Pages/Career/Openings";
-import WorkingAtMuktinath from "./Pages/Career/WorkingAtMuktinath";
-import ForStudents from "./Pages/Career/ForStudents";
 import Privacy from "./components/Privacy";
 import Terms from "./components/Terms";
 
@@ -25,8 +23,6 @@ ReactDOM.createRoot(root).render(
         <Route path="/products" element={<Products />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/openings" element={<Openings />} />
-        <Route path="/working" element={<WorkingAtMuktinath />} />
-        <Route path="/students" element={<ForStudents />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms/>}/>
       </Route>

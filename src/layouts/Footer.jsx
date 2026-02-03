@@ -67,7 +67,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 my-6"></div>
+        <div className="border-t border-muted my-6"></div>
 
         {/* Footer */}
         <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
@@ -84,7 +84,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <FaInstagram className="hover:text-pink-500 transition" />
+              <FaInstagram className="hover:text-secondary transition" />
             </a>
 
             <a
@@ -93,7 +93,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <LiaFacebook className="hover:text-blue-500 transition" />
+              <LiaFacebook className="hover:text-secondary transition" />
             </a>
 
             <a
@@ -101,7 +101,7 @@ function Footer() {
               target="_blank"
               aria-label="LinkedIn"
             >
-              <CiLinkedin className="hover:text-blue-400 transition" />
+              <CiLinkedin className="hover:text-secondary transition" />
             </a>
           </div>
         </div>

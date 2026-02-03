@@ -17,7 +17,7 @@ function Accordian() {
 
   return (
     <>
-      <ul className="text-sm lg:text-base">
+      <ul className="text-sm lg:text-base p-5">
         {data.map((currElem) => {
           return (
             <Faq

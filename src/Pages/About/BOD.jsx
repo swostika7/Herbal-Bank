@@ -25,8 +25,8 @@ const Director = [
 ];
 function BOD() {
   return (
-    <div className="bg-background h-full p-5 ">
-      <div className="mx-auto max-w-7xl justify-center">
+    <div className="bg-muted-foreground h-full p-5 ">
+      <div className="mx-auto max-w-7xl justify-center space-y-6">
         <Heading heading={"Board of Directors"} redesign={"text-center"} />
         {/* picture and description  */}
         <div className="flex flex-col space-y-10  ">
@@ -46,7 +46,7 @@ function BOD() {
 
               {/* description  */}
 
-              <div className="col-span-2 max-w-2xl">
+              <div className="col-span-2 max-w-7xl">
                 <Heading
                   key={i}
                   heading={items.name}
